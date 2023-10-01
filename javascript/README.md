@@ -8,6 +8,7 @@
   - [Run](#run)
 - [Match Statistics](#match-statistics)
 - [Cardinalities](#cardinalities)
+  - [Compare with C++](#compare-with-c)
   - [Compare with Go](#compare-with-go)
   - [Compare with Haskell](#compare-with-haskell)
   - [Compare with Java](#compare-with-java)
@@ -33,59 +34,59 @@ node main.js <pattern> <file_path>
 
 | Category                          | Name                  | Value                         | Total  | Percentile (%)<br>(include zero) | Percentile (%)<br>(exclude 0) |
 | :-------------------------------- | :-------------------- | :---------------------------- | -----: | -------------: | -------------: |
-| Character Classes - ASCII         | Uppercase Letter      | `[[:upper:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Lowercase Letter      | `[[:lower:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Letter And Digit      | `[[:alnum:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Letter                | `[[:alpha:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | ASCII Character       | `[[:ascii:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Space And Tab         | `[[:blank:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Control Character     | `[[:cntrl:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Digit                 | `[[:digit:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Visible Character     | `[[:graph:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Printable             | `[[:print:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Punctuation           | `[[:punct:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Whitespace            | `[[:space:]]`                 | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Word Character        | `[[:word:]]`                  | 0      | 9.09           | —              |
-| Character Classes - ASCII         | Hexadecimal Digit     | `[[:xdigit:]]`                | 0      | 9.09           | —              |
+| Character Classes - ASCII         | Uppercase Letter      | `[[:upper:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Lowercase Letter      | `[[:lower:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Letter And Digit      | `[[:alnum:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Letter                | `[[:alpha:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | ASCII Character       | `[[:ascii:]]`                 | 0      | 16.67          | —              |
+| Character Classes - ASCII         | Space And Tab         | `[[:blank:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Control Character     | `[[:cntrl:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Digit                 | `[[:digit:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Visible Character     | `[[:graph:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Printable             | `[[:print:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Punctuation           | `[[:punct:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Whitespace            | `[[:space:]]`                 | 0      | 8.33           | —              |
+| Character Classes - ASCII         | Word Character        | `[[:word:]]`                  | 0      | 16.67          | —              |
+| Character Classes - ASCII         | Hexadecimal Digit     | `[[:xdigit:]]`                | 0      | 8.33           | —              |
 | Character Classes - POSIX - Short | Uppercase Letter      | `[\p{Lu}]`                    | 1831   | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Lowercase Letter      | `[\p{Ll}]`                    | 2233   | 90.91          | 90.91          |
+| Character Classes - POSIX - Short | Lowercase Letter      | `[\p{Ll}]`                    | 2233   | 91.67          | 90.91          |
 | Character Classes - POSIX - Short | Titlecase Letter      | `[\p{Lt}]`                    | 31     | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Cased Letter          | `[\p{LC}]`                    | 4095   | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Cased Letter Amp      | `[\p{L&}]`                    | 0      | 72.73          | —              |
+| Character Classes - POSIX - Short | Cased Letter Amp      | `[\p{L&}]`                    | 0      | 75.00          | —              |
 | Character Classes - POSIX - Short | Modifier Letter       | `[\p{Lm}]`                    | 397    | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Other Letter          | `[\p{Lo}]`                    | 131612 | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Letter                | `[\p{L}]`                     | 136104 | 90.91          | 90.91          |
+| Character Classes - POSIX - Short | Letter                | `[\p{L}]`                     | 136104 | 91.67          | 90.91          |
 | Character Classes - POSIX - Short | Nonspacing Mark       | `[\p{Mn}]`                    | 1985   | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Spacing Mark          | `[\p{Mc}]`                    | 452    | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Enclosing Mark        | `[\p{Me}]`                    | 13     | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Mark                  | `[\p{M}]`                     | 2450   | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Decimal Number        | `[\p{Nd}]`                    | 680    | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Letter Number         | `[\p{Nl}]`                    | 236    | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Other Number          | `[\p{No}]`                    | 915    | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Number                | `[\p{N}]`                     | 1831   | 90.91          | 90.91          |
+| Character Classes - POSIX - Short | Other Number          | `[\p{No}]`                    | 915    | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Number                | `[\p{N}]`                     | 1831   | 91.67          | 90.91          |
 | Character Classes - POSIX - Short | Connector Punctuation | `[\p{Pc}]`                    | 10     | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Dash Punctuation      | `[\p{Pd}]`                    | 26     | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Open Punctuation      | `[\p{Ps}]`                    | 79     | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Close Punctuation     | `[\p{Pe}]`                    | 77     | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Initial Punctuation   | `[\p{Pi}]`                    | 12     | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Final Punctuation     | `[\p{Pf}]`                    | 10     | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Other Punctuation     | `[\p{Po}]`                    | 628    | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Punctuation           | `[\p{P}]`                     | 842    | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Math Symbol           | `[\p{Sm}]`                    | 948    | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Currency Symbol       | `[\p{Sc}]`                    | 63     | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Modifier Symbol       | `[\p{Sk}]`                    | 125    | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Other Symbol          | `[\p{So}]`                    | 6634   | 81.82          | 81.82          |
-| Character Classes - POSIX - Short | Symbol                | `[\p{S}]`                     | 7770   | 81.82          | 81.82          |
-| Character Classes - POSIX - Short | Space Separator       | `[\p{Zs}]`                    | 17     | 90.91          | 90.91          |
+| Character Classes - POSIX - Short | Initial Punctuation   | `[\p{Pi}]`                    | 12     | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Final Punctuation     | `[\p{Pf}]`                    | 10     | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Other Punctuation     | `[\p{Po}]`                    | 628    | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Punctuation           | `[\p{P}]`                     | 842    | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Math Symbol           | `[\p{Sm}]`                    | 948    | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Currency Symbol       | `[\p{Sc}]`                    | 63     | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Modifier Symbol       | `[\p{Sk}]`                    | 125    | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Other Symbol          | `[\p{So}]`                    | 6634   | 83.33          | 81.82          |
+| Character Classes - POSIX - Short | Symbol                | `[\p{S}]`                     | 7770   | 83.33          | 81.82          |
+| Character Classes - POSIX - Short | Space Separator       | `[\p{Zs}]`                    | 17     | 91.67          | 90.91          |
 | Character Classes - POSIX - Short | Line Separator        | `[\p{Zl}]`                    | 1      | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Paragraph Separator   | `[\p{Zp}]`                    | 1      | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Separator             | `[\p{Z}]`                     | 19     | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Control               | `[\p{Cc}]`                    | 65     | 90.91          | 90.91          |
-| Character Classes - POSIX - Short | Format                | `[\p{Cf}]`                    | 170    | 90.91          | 90.91          |
+| Character Classes - POSIX - Short | Separator             | `[\p{Z}]`                     | 19     | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Control               | `[\p{Cc}]`                    | 65     | 91.67          | 90.91          |
+| Character Classes - POSIX - Short | Format                | `[\p{Cf}]`                    | 170    | 91.67          | 90.91          |
 | Character Classes - POSIX - Short | Surrogate             | `[\p{Cs}]`                    | 2048   | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 100.00         | 100.00         |
-| Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 825345 | 45.45          | 25.00          |
-| Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 965096 | 36.36          | 36.36          |
+| Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 825345 | 50.00          | 25.00          |
+| Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 965096 | 41.67          | 36.36          |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1831   | 100.00         | 100.00         |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2233   | 100.00         | 100.00         |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 100.00         | 100.00         |
@@ -122,10 +123,106 @@ node main.js <pattern> <file_path>
 | Character Classes - POSIX - Long  | Format                | `[\p{Format}]`                | 170    | 100.00         | 100.00         |
 | Character Classes - POSIX - Long  | Surrogate             | `[\p{Surrogate}]`             | 2048   | 100.00         | 100.00         |
 | Character Classes - POSIX - Long  | Private Use           | `[\p{Private_Use}]`           | 137468 | 100.00         | 100.00         |
-| Character Classes - POSIX - Long  | Unassigned            | `[\p{Unassigned}]`            | 825345 | 72.73          | 40.00          |
-| Character Classes - POSIX - Long  | Other                 | `[\p{Other}]`                 | 965096 | 72.73          | 40.00          |
+| Character Classes - POSIX - Long  | Unassigned            | `[\p{Unassigned}]`            | 825345 | 75.00          | 40.00          |
+| Character Classes - POSIX - Long  | Other                 | `[\p{Other}]`                 | 965096 | 75.00          | 40.00          |
 
 ## Cardinalities
+
+### Compare with [C++](../c++)
+
+| Category                          | Name                  | Value                         | Unique | Shared | Missing |
+| :-------------------------------- | :-------------------- | :---------------------------- | -----: | -----: | ------: |
+| Character Classes - ASCII         | Uppercase Letter      | `[[:upper:]]`                 | 0      | 0      | 26      |
+| Character Classes - ASCII         | Lowercase Letter      | `[[:lower:]]`                 | 0      | 0      | 26      |
+| Character Classes - ASCII         | Letter And Digit      | `[[:alnum:]]`                 | 0      | 0      | 62      |
+| Character Classes - ASCII         | Letter                | `[[:alpha:]]`                 | 0      | 0      | 52      |
+| Character Classes - ASCII         | ASCII Character       | `[[:ascii:]]`                 | 0      | 0      | 0       |
+| Character Classes - ASCII         | Space And Tab         | `[[:blank:]]`                 | 0      | 0      | 2       |
+| Character Classes - ASCII         | Control Character     | `[[:cntrl:]]`                 | 0      | 0      | 33      |
+| Character Classes - ASCII         | Digit                 | `[[:digit:]]`                 | 0      | 0      | 10      |
+| Character Classes - ASCII         | Visible Character     | `[[:graph:]]`                 | 0      | 0      | 94      |
+| Character Classes - ASCII         | Printable             | `[[:print:]]`                 | 0      | 0      | 95      |
+| Character Classes - ASCII         | Punctuation           | `[[:punct:]]`                 | 0      | 0      | 32      |
+| Character Classes - ASCII         | Whitespace            | `[[:space:]]`                 | 0      | 0      | 6       |
+| Character Classes - ASCII         | Word Character        | `[[:word:]]`                  | 0      | 0      | 0       |
+| Character Classes - ASCII         | Hexadecimal Digit     | `[[:xdigit:]]`                | 0      | 0      | 22      |
+| Character Classes - POSIX - Short | Uppercase Letter      | `[\p{Lu}]`                    | 1831   | 0      | 0       |
+| Character Classes - POSIX - Short | Lowercase Letter      | `[\p{Ll}]`                    | 2233   | 0      | 0       |
+| Character Classes - POSIX - Short | Titlecase Letter      | `[\p{Lt}]`                    | 31     | 0      | 0       |
+| Character Classes - POSIX - Short | Cased Letter          | `[\p{LC}]`                    | 4095   | 0      | 0       |
+| Character Classes - POSIX - Short | Cased Letter Amp      | `[\p{L&}]`                    | 0      | 0      | 0       |
+| Character Classes - POSIX - Short | Modifier Letter       | `[\p{Lm}]`                    | 397    | 0      | 0       |
+| Character Classes - POSIX - Short | Other Letter          | `[\p{Lo}]`                    | 131612 | 0      | 0       |
+| Character Classes - POSIX - Short | Letter                | `[\p{L}]`                     | 136104 | 0      | 0       |
+| Character Classes - POSIX - Short | Nonspacing Mark       | `[\p{Mn}]`                    | 1985   | 0      | 0       |
+| Character Classes - POSIX - Short | Spacing Mark          | `[\p{Mc}]`                    | 452    | 0      | 0       |
+| Character Classes - POSIX - Short | Enclosing Mark        | `[\p{Me}]`                    | 13     | 0      | 0       |
+| Character Classes - POSIX - Short | Mark                  | `[\p{M}]`                     | 2450   | 0      | 0       |
+| Character Classes - POSIX - Short | Decimal Number        | `[\p{Nd}]`                    | 680    | 0      | 0       |
+| Character Classes - POSIX - Short | Letter Number         | `[\p{Nl}]`                    | 236    | 0      | 0       |
+| Character Classes - POSIX - Short | Other Number          | `[\p{No}]`                    | 915    | 0      | 0       |
+| Character Classes - POSIX - Short | Number                | `[\p{N}]`                     | 1831   | 0      | 0       |
+| Character Classes - POSIX - Short | Connector Punctuation | `[\p{Pc}]`                    | 10     | 0      | 0       |
+| Character Classes - POSIX - Short | Dash Punctuation      | `[\p{Pd}]`                    | 26     | 0      | 0       |
+| Character Classes - POSIX - Short | Open Punctuation      | `[\p{Ps}]`                    | 79     | 0      | 0       |
+| Character Classes - POSIX - Short | Close Punctuation     | `[\p{Pe}]`                    | 77     | 0      | 0       |
+| Character Classes - POSIX - Short | Initial Punctuation   | `[\p{Pi}]`                    | 12     | 0      | 0       |
+| Character Classes - POSIX - Short | Final Punctuation     | `[\p{Pf}]`                    | 10     | 0      | 0       |
+| Character Classes - POSIX - Short | Other Punctuation     | `[\p{Po}]`                    | 628    | 0      | 0       |
+| Character Classes - POSIX - Short | Punctuation           | `[\p{P}]`                     | 842    | 0      | 0       |
+| Character Classes - POSIX - Short | Math Symbol           | `[\p{Sm}]`                    | 948    | 0      | 0       |
+| Character Classes - POSIX - Short | Currency Symbol       | `[\p{Sc}]`                    | 63     | 0      | 0       |
+| Character Classes - POSIX - Short | Modifier Symbol       | `[\p{Sk}]`                    | 125    | 0      | 0       |
+| Character Classes - POSIX - Short | Other Symbol          | `[\p{So}]`                    | 6634   | 0      | 0       |
+| Character Classes - POSIX - Short | Symbol                | `[\p{S}]`                     | 7770   | 0      | 0       |
+| Character Classes - POSIX - Short | Space Separator       | `[\p{Zs}]`                    | 17     | 0      | 0       |
+| Character Classes - POSIX - Short | Line Separator        | `[\p{Zl}]`                    | 1      | 0      | 0       |
+| Character Classes - POSIX - Short | Paragraph Separator   | `[\p{Zp}]`                    | 1      | 0      | 0       |
+| Character Classes - POSIX - Short | Separator             | `[\p{Z}]`                     | 19     | 0      | 0       |
+| Character Classes - POSIX - Short | Control               | `[\p{Cc}]`                    | 65     | 0      | 0       |
+| Character Classes - POSIX - Short | Format                | `[\p{Cf}]`                    | 170    | 0      | 0       |
+| Character Classes - POSIX - Short | Surrogate             | `[\p{Cs}]`                    | 2048   | 0      | 0       |
+| Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 0      | 0       |
+| Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 825345 | 0      | 0       |
+| Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 965096 | 0      | 0       |
+| Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1831   | 0      | 0       |
+| Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2233   | 0      | 0       |
+| Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
+| Character Classes - POSIX - Long  | Cased Letter          | `[\p{Cased_Letter}]`          | 4095   | 0      | 0       |
+| Character Classes - POSIX - Long  | Modifier Letter       | `[\p{Modifier_Letter}]`       | 397    | 0      | 0       |
+| Character Classes - POSIX - Long  | Other Letter          | `[\p{Other_Letter}]`          | 131612 | 0      | 0       |
+| Character Classes - POSIX - Long  | Letter                | `[\p{Letter}]`                | 136104 | 0      | 0       |
+| Character Classes - POSIX - Long  | Nonspacing Mark       | `[\p{Nonspacing_Mark}]`       | 1985   | 0      | 0       |
+| Character Classes - POSIX - Long  | Spacing Mark          | `[\p{Spacing_Mark}]`          | 452    | 0      | 0       |
+| Character Classes - POSIX - Long  | Enclosing Mark        | `[\p{Enclosing_Mark}]`        | 13     | 0      | 0       |
+| Character Classes - POSIX - Long  | Mark                  | `[\p{Mark}]`                  | 2450   | 0      | 0       |
+| Character Classes - POSIX - Long  | Decimal Number        | `[\p{Decimal_Number}]`        | 680    | 0      | 0       |
+| Character Classes - POSIX - Long  | Letter Number         | `[\p{Letter_Number}]`         | 236    | 0      | 0       |
+| Character Classes - POSIX - Long  | Other Number          | `[\p{Other_Number}]`          | 915    | 0      | 0       |
+| Character Classes - POSIX - Long  | Number                | `[\p{Number}]`                | 1831   | 0      | 0       |
+| Character Classes - POSIX - Long  | Connector Punctuation | `[\p{Connector_Punctuation}]` | 10     | 0      | 0       |
+| Character Classes - POSIX - Long  | Dash Punctuation      | `[\p{Dash_Punctuation}]`      | 26     | 0      | 0       |
+| Character Classes - POSIX - Long  | Open Punctuation      | `[\p{Open_Punctuation}]`      | 79     | 0      | 0       |
+| Character Classes - POSIX - Long  | Close Punctuation     | `[\p{Close_Punctuation}]`     | 77     | 0      | 0       |
+| Character Classes - POSIX - Long  | Initial Punctuation   | `[\p{Initial_Punctuation}]`   | 12     | 0      | 0       |
+| Character Classes - POSIX - Long  | Final Punctuation     | `[\p{Final_Punctuation}]`     | 10     | 0      | 0       |
+| Character Classes - POSIX - Long  | Other Punctuation     | `[\p{Other_Punctuation}]`     | 628    | 0      | 0       |
+| Character Classes - POSIX - Long  | Punctuation           | `[\p{Punctuation}]`           | 842    | 0      | 0       |
+| Character Classes - POSIX - Long  | Math Symbol           | `[\p{Math_Symbol}]`           | 948    | 0      | 0       |
+| Character Classes - POSIX - Long  | Currency Symbol       | `[\p{Currency_Symbol}]`       | 63     | 0      | 0       |
+| Character Classes - POSIX - Long  | Modifier Symbol       | `[\p{Modifier_Symbol}]`       | 125    | 0      | 0       |
+| Character Classes - POSIX - Long  | Other Symbol          | `[\p{Other_Symbol}]`          | 6634   | 0      | 0       |
+| Character Classes - POSIX - Long  | Symbol                | `[\p{Symbol}]`                | 7770   | 0      | 0       |
+| Character Classes - POSIX - Long  | Space Separator       | `[\p{Space_Separator}]`       | 17     | 0      | 0       |
+| Character Classes - POSIX - Long  | Line Separator        | `[\p{Line_Separator}]`        | 1      | 0      | 0       |
+| Character Classes - POSIX - Long  | Paragraph Separator   | `[\p{Paragraph_Separator}]`   | 1      | 0      | 0       |
+| Character Classes - POSIX - Long  | Separator             | `[\p{Separator}]`             | 19     | 0      | 0       |
+| Character Classes - POSIX - Long  | Control               | `[\p{Control}]`               | 65     | 0      | 0       |
+| Character Classes - POSIX - Long  | Format                | `[\p{Format}]`                | 170    | 0      | 0       |
+| Character Classes - POSIX - Long  | Surrogate             | `[\p{Surrogate}]`             | 2048   | 0      | 0       |
+| Character Classes - POSIX - Long  | Private Use           | `[\p{Private_Use}]`           | 137468 | 0      | 0       |
+| Character Classes - POSIX - Long  | Unassigned            | `[\p{Unassigned}]`            | 825345 | 0      | 0       |
+| Character Classes - POSIX - Long  | Other                 | `[\p{Other}]`                 | 965096 | 0      | 0       |
 
 ### Compare with [Go](../go)
 

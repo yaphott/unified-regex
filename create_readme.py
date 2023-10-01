@@ -132,7 +132,7 @@ def generate_overall_readme(
                 [
                     Md.checkbox(False) + " C",
                     Md.checkbox(False) + " C#",
-                    Md.checkbox(False) + " C++",
+                    Md.checkbox(True) + " C++",
                     Md.checkbox(True) + " Go",
                     Md.checkbox(True) + " Haskell",
                     Md.checkbox(True) + " Java",
@@ -280,6 +280,10 @@ def generate_overall_readme(
             "",
             "There are multiple implementations of regex in Haskell, but regex-pcre appears to be the most popular flavor (at the time of writing this) the supports many character classes.",
             f"However, it is worth noting that this package is simply wrapping the {Md.href('pcre-c', 'http://www.pcre.org/')} library.",
+            "",
+            Md.h3("C++"),
+            "",
+            "The C++ regex implementation does not support POSIX character classes.",
             "",
         ]
     )
