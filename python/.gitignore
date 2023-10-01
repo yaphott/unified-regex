@@ -1,0 +1,11 @@
+# Everything
+*
+
+# Except
+!README.md
+!main.py
+!requirements.txt
+!output/
+output/*.txt
+
+!.gitignore

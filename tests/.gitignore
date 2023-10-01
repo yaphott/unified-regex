@@ -1,0 +1,7 @@
+# Everything
+*
+
+# Except
+!test_helper.py
+
+!.gitignore

@@ -1,0 +1,16 @@
+{
+  "uppercase_letter": "[[:upper:]]",
+  "lowercase_letter": "[[:lower:]]",
+  "letter_and_digit": "[[:alnum:]]",
+  "letter": "[[:alpha:]]",
+  "ascii_character": "[[:ascii:]]",
+  "space_and_tab": "[[:blank:]]",
+  "control_character": "[[:cntrl:]]",
+  "digit": "[[:digit:]]",
+  "visible_character": "[[:graph:]]",
+  "printable": "[[:print:]]",
+  "punctuation": "[[:punct:]]",
+  "whitespace": "[[:space:]]",
+  "word_character": "[[:word:]]",
+  "hexadecimal_digit": "[[:xdigit:]]"
+}

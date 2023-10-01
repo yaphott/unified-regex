@@ -1,0 +1,27 @@
+{
+  "build": {
+    "java": "javac Main.java",
+    "objc": ". /usr/share/GNUstep/Makefiles/GNUstep.sh && clang $(gnustep-config --objc-flags) -I /usr/lib/gcc/x86_64-linux-gnu/12/include -o main main.m $(gnustep-config --base-libs)",
+    "haskell": "cabal update && cabal build"
+  },
+  "base": {
+    "java": "java Main",
+    "scala": "sbt",
+    "rust": "cargo run",
+    "objc": "./main",
+    "go": "/usr/local/go/bin/go run main.go",
+    "haskell": "cabal run haskell --",
+    "javascript": "node main.js",
+    "php": "php main.php",
+    "python": "python3 main.py",
+    "ruby": "ruby main.rb",
+    "perl": "perl main.pl"
+  },
+  "clean": {
+    "java": "rm -f Main.class",
+    "scala": "rm -rf target",
+    "rust": "rm -rf target",
+    "objc": "rm -f main && rm -rf main.d",
+    "haskell": "rm -rf dist-newstyle"
+  }
+}

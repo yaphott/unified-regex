@@ -1,0 +1,9 @@
+# Everything
+*
+
+# Except
+!validate.py
+!tests/
+!tests/*
+
+!.gitignore

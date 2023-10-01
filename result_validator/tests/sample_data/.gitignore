@@ -1,0 +1,15 @@
+# Everything
+*
+
+# Except
+!mark.txt
+!empty_one_line.txt
+!empty_two_line.txt
+!mark_pattern_chars.txt
+!mark_pattern_chars_zero_filled.txt
+!mark_pattern_chars_without_backslash.txt
+
+# Never
+mark_nonexistent.txt
+
+!.gitignore

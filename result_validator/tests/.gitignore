@@ -1,0 +1,9 @@
+# Everything
+*
+
+# Except
+!test_validate.sh
+!sample_data/
+!sample_data/*
+
+!.gitignore

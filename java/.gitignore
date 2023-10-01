@@ -1,0 +1,10 @@
+# Everything
+*
+
+# Except
+!README.md
+!Main.java
+!output/
+output/*.txt
+
+!.gitignore

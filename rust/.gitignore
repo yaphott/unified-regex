@@ -1,0 +1,13 @@
+# Everything
+*
+
+# Except
+!README.md
+!Cargo.lock
+!Cargo.toml
+!src/
+!src/*
+!output/
+output/*.txt
+
+!.gitignore

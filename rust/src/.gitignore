@@ -1,0 +1,7 @@
+# Everything
+*
+
+# Except
+!main.rs
+
+!.gitignore

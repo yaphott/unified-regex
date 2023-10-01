@@ -1,0 +1,9 @@
+# Everything
+*
+
+# Except
+!character_classes-ascii.json
+!character_classes-posix-short.json
+!character_classes-posix-long.json
+
+!.gitignore

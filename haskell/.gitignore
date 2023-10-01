@@ -1,0 +1,12 @@
+# Everything
+*
+
+# Except
+!README.md
+!haskell.cabal
+!app/
+!app/*
+!output/
+output/*.txt
+
+!.gitignore
