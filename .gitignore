@@ -20,6 +20,8 @@
 !tests/
 !tests/*
 
+!c++/
+!c++/*
 !go/
 !go/*
 !haskell/
@@ -45,6 +47,7 @@
 
 !README.md
 !.gitignore
+!.gitattributes
 
 !.git/
 !.git/*
