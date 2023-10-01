@@ -4,6 +4,7 @@ import re
 
 from helper import (
     Md,
+    category_sort_key,
     compute_percentile,
     fmt_ordinal_results,
     get_languages,
@@ -75,7 +76,7 @@ def generate_overall_readme(
                             ]
                         )
                     ).replace("\n", "\n    ")
-                    for pattern_category in ordinal_results
+                    for pattern_category in sorted(ordinal_results, key=category_sort_key)
                 ],
                 numbered=True,
             ),
@@ -332,8 +333,8 @@ def generate_overall_readme(
                                             f"-{analysis[(pattern_category, pattern_name, row_lang, col_lang)]['missing']}",
                                         ]
                                     )
-                                    if col_lang != row_lang
-                                    else Md.TABLE_NULL_CELL
+                                    # Null cells that are the same row and column language
+                                    if col_lang != row_lang else Md.TABLE_NULL_CELL
                                     for col_lang in available_langs
                                 ],
                             ]
@@ -344,7 +345,7 @@ def generate_overall_readme(
                     for pattern_name, pattern_exp in ordinal_results[pattern_category]
                 ]
             )
-            for pattern_category in ordinal_results
+            for pattern_category in sorted(ordinal_results, key=category_sort_key)
         ]
     )
 
@@ -520,7 +521,7 @@ def generate_language_readme(
                         if lang_count[(pattern_category, pattern_name, pattern_exp)] > 0
                         else Md.TABLE_NULL_CELL,
                     ]
-                    for pattern_category in ordinal_results
+                    for pattern_category in sorted(ordinal_results, key=category_sort_key)
                     for pattern_name, pattern_exp in ordinal_results[pattern_category]
                 ],
                 alignment=["left", "left", "left", "right", "right", "right"],

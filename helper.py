@@ -17,6 +17,7 @@ __all__ = [
     "load_json",
     "load_codepoints_as_ordinals",
     "Md",
+    "category_sort_key",
 ]
 
 
@@ -26,6 +27,23 @@ TEXT_OVERRIDES: Final[dict[str, str]] = {
     "php": "PHP",
     "objc": "Obj-C",
 }
+
+
+def category_sort_key(category_name: str) -> tuple[tuple[str, ...], ...]:
+    """Key function for sorting strings.
+
+    Args:
+        category_name (str): Text to sort.
+
+    Returns:
+        tuple[tuple[str, ...], ...]: Sort key.
+    """
+    category_name = key_to_title(category_name)
+    return tuple(
+        tuple(word.strip() for word in reversed(chunk.split(" ")) if word.strip())
+        for chunk in reversed(category_name.split("-"))
+        if chunk.strip()
+    )
 
 
 def fmt_ordinal_results(
