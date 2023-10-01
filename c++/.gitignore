@@ -1,0 +1,10 @@
+# Everything
+*
+
+# Except
+!README.md
+!main.cpp
+!output/
+!output/*.txt
+
+!.gitignore

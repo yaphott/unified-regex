@@ -1,10 +1,12 @@
 {
   "build": {
+    "c++": "g++ main.cpp -o main",
     "java": "javac Main.java",
     "objc": ". /usr/share/GNUstep/Makefiles/GNUstep.sh && clang $(gnustep-config --objc-flags) -I /usr/lib/gcc/x86_64-linux-gnu/12/include -o main main.m $(gnustep-config --base-libs)",
     "haskell": "cabal update && cabal build"
   },
   "base": {
+    "c++": "./main",
     "java": "java Main",
     "scala": "sbt",
     "rust": "cargo run",
@@ -18,6 +20,7 @@
     "perl": "perl main.pl"
   },
   "clean": {
+    "c++": "rm -f main",
     "java": "rm -f Main.class",
     "scala": "rm -rf target",
     "rust": "rm -rf target",
