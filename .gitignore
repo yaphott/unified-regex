@@ -47,6 +47,7 @@
 
 !README.md
 !.gitignore
+!.gitattributes
 
 !.git/
 !.git/*
