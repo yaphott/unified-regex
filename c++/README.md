@@ -105,6 +105,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0     | 16.67          | —              |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0     | 33.33          | —              |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0     | 8.33           | —              |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 10    | 66.67          | 66.67          |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 6     | 58.33          | 58.33          |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 63    | 66.67          | 66.67          |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0     | 58.33          | —              |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0     | 58.33          | —              |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0     | 58.33          | —              |
@@ -203,6 +206,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 137703  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -299,6 +305,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 977459  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -395,6 +404,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 830672  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 970414  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -491,6 +503,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 825345  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 965096  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2233    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -587,6 +602,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 829834  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 967530  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 650     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 135139  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2227    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -683,6 +701,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 830672  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 970414  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 640     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 17      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 134436  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1791    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2155    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -779,6 +800,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 829834  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 967530  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 650     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 20      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 133485  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -875,6 +899,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 137703  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -971,6 +998,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 836602  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 974296  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1788    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2151    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -1067,6 +1097,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 825345  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 963048  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 670     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 139549  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2233    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -1163,6 +1196,9 @@ rm -f main
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 0      | 137468  |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 0      | 830672  |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 0      | 970414  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |

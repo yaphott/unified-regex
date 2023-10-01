@@ -87,6 +87,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 836602 | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 974296 | 91.67          | 90.91          |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 10     | 66.67          | 66.67          |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 6      | 58.33          | 58.33          |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 63     | 66.67          | 66.67          |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 66.67          | 20.00          |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 66.67          | 20.00          |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 100.00         | 100.00         |
@@ -185,6 +188,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 0      | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 836602 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 974296 | 0      | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -281,6 +287,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 836602 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 836593 | 137703 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -377,6 +386,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 0      | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 836602 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 107744 | 866552 | 110907  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -473,6 +485,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 5930   | 830672 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 5930   | 968366 | 2048    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -569,6 +584,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 11257  | 825345 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 11248  | 963048 | 2048    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 1788   | 43      |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 2151   | 82      |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 31     | 0       |
@@ -665,6 +683,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 6768   | 829834 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 6766   | 967530 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 650     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 135139  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 1788   | 43      |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 2151   | 76      |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 31     | 0       |
@@ -761,6 +782,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 5930   | 830672 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 5930   | 968366 | 2048    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 640     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 17      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 134436  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 1788   | 3       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 2151   | 4       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 31     | 0       |
@@ -857,6 +881,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 6768   | 829834 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 6766   | 967530 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 650     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 20      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 133485  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -953,6 +980,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 836602 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 836593 | 137703 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |
@@ -1049,6 +1079,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 11257  | 825345 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 11248  | 963048 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 670     |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 19      |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 139549  |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 1788   | 43      |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 2151   | 82      |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 31     | 0       |
@@ -1145,6 +1178,9 @@ ruby main.rb <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 5930   | 830672 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 5930   | 968366 | 2048    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 0      | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 0      | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 1788   | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 2151   | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 31     | 0      | 0       |

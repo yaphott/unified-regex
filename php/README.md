@@ -87,6 +87,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 100.00         | 100.00         |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 829834 | 66.67          | 50.00          |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 967530 | 58.33          | 54.55          |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 660    | 91.67          | 91.67          |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 26     | 100.00         | 100.00         |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133548 | 75.00          | 75.00          |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 58.33          | —              |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 58.33          | —              |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 58.33          | —              |
@@ -185,6 +188,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 0      | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 829834 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 967530 | 0      | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 20     | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -281,6 +287,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 829834 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 829827 | 137703 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 21     | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -377,6 +386,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 137468 | 0      | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 829834 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 106731 | 860799 | 116660  |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 20     | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -473,6 +485,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 829834 | 838     |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 967530 | 2884    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 20     | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -569,6 +584,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 4489   | 825345 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 4482   | 963048 | 2048    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 2      | 24     | 1       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2233    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -665,6 +683,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 829834 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 967530 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 660    | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 25     | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 895    | 132653 | 2549    |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2227    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -761,6 +782,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 829834 | 838     |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 967530 | 2884    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 10     | 650    | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 3      | 23     | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 1485   | 132063 | 2436    |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1791    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2155    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -857,6 +881,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 829834 | 0      | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 829827 | 137703 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 21     | 5      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |
@@ -953,6 +980,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 829834 | 6768    |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 967530 | 6766    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 20     | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1788    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2151    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -1049,6 +1079,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 4489   | 825345 | 0       |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 4482   | 963048 | 0       |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 0      | 660    | 20      |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 1      | 25     | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 895    | 132653 | 6959    |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 1831    |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 2233    |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 31      |
@@ -1145,6 +1178,9 @@ php main.php <pattern> <file_path>
 | Character Classes - POSIX - Short | Private Use           | `[\p{Co}]`                    | 0      | 137468 | 0       |
 | Character Classes - POSIX - Short | Unassigned            | `[\p{Cn}]`                    | 0      | 829834 | 838     |
 | Character Classes - POSIX - Short | Other                 | `[\p{C}]`                     | 0      | 967530 | 2884    |
+| Character Classes - Common        | Digit                 | `[\d]`                        | 650    | 10     | 0       |
+| Character Classes - Common        | Whitespace            | `[\s]`                        | 20     | 6      | 0       |
+| Character Classes - Common        | Word Character        | `[\w]`                        | 133485 | 63     | 0       |
 | Character Classes - POSIX - Long  | Uppercase Letter      | `[\p{Uppercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Lowercase Letter      | `[\p{Lowercase_Letter}]`      | 0      | 0      | 0       |
 | Character Classes - POSIX - Long  | Titlecase Letter      | `[\p{Titlecase_Letter}]`      | 0      | 0      | 0       |

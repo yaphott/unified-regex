@@ -192,7 +192,11 @@ Click a language to navigate to the individual results.
     - [Private Use](#character-classes---posix---short---private-use-pco) (`[\p{Co}]`)
     - [Unassigned](#character-classes---posix---short---unassigned-pcn) (`[\p{Cn}]`)
     - [Other](#character-classes---posix---short---other-pc) (`[\p{C}]`)
-3. [Character Classes - POSIX - Long](#character-classes---posix---long)
+3. [Character Classes - Common](#character-classes---common)
+    - [Digit](#character-classes---common---digit-d) (`[\d]`)
+    - [Whitespace](#character-classes---common---whitespace-s) (`[\s]`)
+    - [Word Character](#character-classes---common---word-character-w) (`[\w]`)
+4. [Character Classes - POSIX - Long](#character-classes---posix---long)
     - [Uppercase Letter](#character-classes---posix---long---uppercase-letter-puppercase_letter) (`[\p{Uppercase_Letter}]`)
     - [Lowercase Letter](#character-classes---posix---long---lowercase-letter-plowercase_letter) (`[\p{Lowercase_Letter}]`)
     - [Titlecase Letter](#character-classes---posix---long---titlecase-letter-ptitlecase_letter) (`[\p{Titlecase_Letter}]`)
@@ -1195,6 +1199,65 @@ Click a language to navigate to the individual results.
 | Ruby       | +974296<br>0<br>-0 | +836593<br>137703<br>-0 | +107744<br>866552<br>-110907 | +5930<br>968366<br>-2048 | +11248<br>963048<br>-2048 | +6766<br>967530<br>-0 | +5930<br>968366<br>-2048 | +6766<br>967530<br>-0 | +836593<br>137703<br>-0 | —       | +11248<br>963048<br>-0 | +5930<br>968366<br>-2048 |
 | Rust       | +963048<br>0<br>-0 | +825345<br>137703<br>-0 | +105769<br>857279<br>-120180 | +0<br>963048<br>-7366 | +0<br>963048<br>-2048 | +0<br>963048<br>-4482 | +0<br>963048<br>-7366 | +0<br>963048<br>-4482 | +825345<br>137703<br>-0 | +0<br>963048<br>-11248 | —       | +0<br>963048<br>-7366 |
 | Scala      | +970414<br>0<br>-0 | +832711<br>137703<br>-0 | +108804<br>861610<br>-115849 | +0<br>970414<br>-0 | +5318<br>965096<br>-0 | +2884<br>967530<br>-0 | +0<br>970414<br>-0 | +2884<br>967530<br>-0 | +832711<br>137703<br>-0 | +2048<br>968366<br>-5930 | +7366<br>963048<br>-0 | —       |
+
+---
+
+### Character Classes - Common
+
+1. [Digit](#character-classes---common---digit-d) (`[\d]`)
+2. [Whitespace](#character-classes---common---whitespace-s) (`[\s]`)
+3. [Word Character](#character-classes---common---word-character-w) (`[\w]`)
+
+#### Character Classes - Common - Digit (`[\d]`)
+
+| Language   | C++  | Go   | Haskell | Java | Javascript | Obj-C | Perl | PHP  | Python | Ruby | Rust | Scala |
+| :--------- | ---: | ---: | ------: | ---: | ---------: | ----: | ---: | ---: | -----: | ---: | ---: | ----: |
+| C++        | —    | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Go         | +0<br>10<br>-0 | —    | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Haskell    | +0<br>10<br>-0 | +0<br>10<br>-0 | —       | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Java       | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | —    | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Javascript | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | —          | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Obj-C      | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | —     | +10<br>650<br>-0 | +0<br>660<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +0<br>660<br>-20 | +650<br>10<br>-0 |
+| Perl       | +640<br>10<br>-0 | +640<br>10<br>-0 | +640<br>10<br>-0 | +640<br>10<br>-0 | +640<br>10<br>-0 | +0<br>650<br>-10 | —    | +0<br>650<br>-10 | +640<br>10<br>-0 | +640<br>10<br>-0 | +0<br>650<br>-30 | +640<br>10<br>-0 |
+| PHP        | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +650<br>10<br>-0 | +0<br>660<br>-0 | +10<br>650<br>-0 | —    | +650<br>10<br>-0 | +650<br>10<br>-0 | +0<br>660<br>-20 | +650<br>10<br>-0 |
+| Python     | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | —      | +0<br>10<br>-0 | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Ruby       | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | —    | +0<br>10<br>-670 | +0<br>10<br>-0 |
+| Rust       | +670<br>10<br>-0 | +670<br>10<br>-0 | +670<br>10<br>-0 | +670<br>10<br>-0 | +670<br>10<br>-0 | +20<br>660<br>-0 | +30<br>650<br>-0 | +20<br>660<br>-0 | +670<br>10<br>-0 | +670<br>10<br>-0 | —    | +670<br>10<br>-0 |
+| Scala      | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-650 | +0<br>10<br>-640 | +0<br>10<br>-650 | +0<br>10<br>-0 | +0<br>10<br>-0 | +0<br>10<br>-670 | —     |
+
+#### Character Classes - Common - Whitespace (`[\s]`)
+
+| Language   | C++ | Go  | Haskell | Java | Javascript | Obj-C | Perl | PHP | Python | Ruby | Rust | Scala |
+| :--------- | --: | --: | ------: | ---: | ---------: | ----: | ---: | --: | -----: | ---: | ---: | ----: |
+| C++        | —   | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-19 | +0<br>6<br>-17 | +0<br>6<br>-20 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-0 |
+| Go         | +0<br>5<br>-1 | —   | +0<br>5<br>-1 | +0<br>5<br>-1 | +0<br>5<br>-20 | +0<br>5<br>-20 | +0<br>5<br>-18 | +0<br>5<br>-21 | +0<br>5<br>-0 | +0<br>5<br>-1 | +0<br>5<br>-20 | +0<br>5<br>-1 |
+| Haskell    | +0<br>6<br>-0 | +1<br>5<br>-0 | —       | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-19 | +0<br>6<br>-17 | +0<br>6<br>-20 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-0 |
+| Java       | +0<br>6<br>-0 | +1<br>5<br>-0 | +0<br>6<br>-0 | —    | +0<br>6<br>-19 | +0<br>6<br>-19 | +0<br>6<br>-17 | +0<br>6<br>-20 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-0 |
+| Javascript | +19<br>6<br>-0 | +20<br>5<br>-0 | +19<br>6<br>-0 | +19<br>6<br>-0 | —          | +1<br>24<br>-1 | +2<br>23<br>-0 | +1<br>24<br>-2 | +20<br>5<br>-0 | +19<br>6<br>-0 | +1<br>24<br>-1 | +19<br>6<br>-0 |
+| Obj-C      | +19<br>6<br>-0 | +20<br>5<br>-0 | +19<br>6<br>-0 | +19<br>6<br>-0 | +1<br>24<br>-1 | —     | +2<br>23<br>-0 | +0<br>25<br>-1 | +20<br>5<br>-0 | +19<br>6<br>-0 | +0<br>25<br>-0 | +19<br>6<br>-0 |
+| Perl       | +17<br>6<br>-0 | +18<br>5<br>-0 | +17<br>6<br>-0 | +17<br>6<br>-0 | +0<br>23<br>-2 | +0<br>23<br>-2 | —    | +0<br>23<br>-3 | +18<br>5<br>-0 | +17<br>6<br>-0 | +0<br>23<br>-2 | +17<br>6<br>-0 |
+| PHP        | +20<br>6<br>-0 | +21<br>5<br>-0 | +20<br>6<br>-0 | +20<br>6<br>-0 | +2<br>24<br>-1 | +1<br>25<br>-0 | +3<br>23<br>-0 | —   | +21<br>5<br>-0 | +20<br>6<br>-0 | +1<br>25<br>-0 | +20<br>6<br>-0 |
+| Python     | +0<br>5<br>-1 | +0<br>5<br>-0 | +0<br>5<br>-1 | +0<br>5<br>-1 | +0<br>5<br>-20 | +0<br>5<br>-20 | +0<br>5<br>-18 | +0<br>5<br>-21 | —      | +0<br>5<br>-1 | +0<br>5<br>-20 | +0<br>5<br>-1 |
+| Ruby       | +0<br>6<br>-0 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-19 | +0<br>6<br>-17 | +0<br>6<br>-20 | +1<br>5<br>-0 | —    | +0<br>6<br>-19 | +0<br>6<br>-0 |
+| Rust       | +19<br>6<br>-0 | +20<br>5<br>-0 | +19<br>6<br>-0 | +19<br>6<br>-0 | +1<br>24<br>-1 | +0<br>25<br>-0 | +2<br>23<br>-0 | +0<br>25<br>-1 | +20<br>5<br>-0 | +19<br>6<br>-0 | —    | +19<br>6<br>-0 |
+| Scala      | +0<br>6<br>-0 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | +0<br>6<br>-19 | +0<br>6<br>-17 | +0<br>6<br>-20 | +1<br>5<br>-0 | +0<br>6<br>-0 | +0<br>6<br>-19 | —     |
+
+#### Character Classes - Common - Word Character (`[\w]`)
+
+| Language   | C++     | Go      | Haskell | Java    | Javascript | Obj-C   | Perl    | PHP     | Python  | Ruby    | Rust    | Scala   |
+| :--------- | ------: | ------: | ------: | ------: | ---------: | ------: | ------: | ------: | ------: | ------: | ------: | ------: |
+| C++        | —       | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Go         | +0<br>63<br>-0 | —       | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Haskell    | +0<br>63<br>-0 | +0<br>63<br>-0 | —       | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Java       | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | —       | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Javascript | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | —          | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Obj-C      | +135139<br>63<br>-0 | +135139<br>63<br>-0 | +135139<br>63<br>-0 | +135139<br>63<br>-0 | +135139<br>63<br>-0 | —       | +703<br>134499<br>-0 | +2549<br>132653<br>-895 | +135139<br>63<br>-0 | +135139<br>63<br>-0 | +0<br>135202<br>-4410 | +135139<br>63<br>-0 |
+| Perl       | +134436<br>63<br>-0 | +134436<br>63<br>-0 | +134436<br>63<br>-0 | +134436<br>63<br>-0 | +134436<br>63<br>-0 | +0<br>134499<br>-703 | —       | +2436<br>132063<br>-1485 | +134436<br>63<br>-0 | +134436<br>63<br>-0 | +0<br>134499<br>-5113 | +134436<br>63<br>-0 |
+| PHP        | +133485<br>63<br>-0 | +133485<br>63<br>-0 | +133485<br>63<br>-0 | +133485<br>63<br>-0 | +133485<br>63<br>-0 | +895<br>132653<br>-2549 | +1485<br>132063<br>-2436 | —       | +133485<br>63<br>-0 | +133485<br>63<br>-0 | +895<br>132653<br>-6959 | +133485<br>63<br>-0 |
+| Python     | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | —       | +0<br>63<br>-0 | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Ruby       | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | —       | +0<br>63<br>-139549 | +0<br>63<br>-0 |
+| Rust       | +139549<br>63<br>-0 | +139549<br>63<br>-0 | +139549<br>63<br>-0 | +139549<br>63<br>-0 | +139549<br>63<br>-0 | +4410<br>135202<br>-0 | +5113<br>134499<br>-0 | +6959<br>132653<br>-895 | +139549<br>63<br>-0 | +139549<br>63<br>-0 | —       | +139549<br>63<br>-0 |
+| Scala      | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-135139 | +0<br>63<br>-134436 | +0<br>63<br>-133485 | +0<br>63<br>-0 | +0<br>63<br>-0 | +0<br>63<br>-139549 | —       |
 
 ---
 

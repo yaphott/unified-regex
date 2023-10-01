@@ -3,6 +3,7 @@
 
 # Except
 !character_classes-ascii.json
+!character_classes-common.json
 !character_classes-posix-short.json
 !character_classes-posix-long.json
 
