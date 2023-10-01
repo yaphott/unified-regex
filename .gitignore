@@ -28,6 +28,8 @@
 !java/*
 !javascript/
 !javascript/*
+!kotlin/
+!kotlin/*
 !objc/
 !objc/*
 !perl/
