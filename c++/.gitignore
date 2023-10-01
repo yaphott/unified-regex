@@ -4,7 +4,7 @@
 # Except
 !README.md
 !main.cpp
-!output/
-!output/*.txt
+output/
+output/*.txt
 
 !.gitignore

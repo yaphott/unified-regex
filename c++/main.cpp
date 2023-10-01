@@ -11,7 +11,7 @@ void iterateCodepoints(const std::string& pattern, const std::string& filePath) 
         return;
     }
 
-    std::wregex regex(pattern.begin(), pattern.end(), std::regex::extended);
+    std::wregex regex(pattern.begin(), pattern.end(), std::regex::ECMAScript);
     for (int i = 0; i <= 0x10ffff; ++i) {
         // if (0xd800 <= i && i <= 0xdfff) {
         //     continue;
