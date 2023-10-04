@@ -1,13 +1,15 @@
 # Unified Regex
 
-Common goals:
+This project compares which characters that regex patterns will match in different languages.
 
-- Learn more about regex implementations in multiple languages.
-- Explore similarities/differences between implementations.
-- Consider viability of creating patterns (in each language) to match other languages.
-- Consider viability of creating optimal regex patterns for character classes.
-- Consider viability of creating optimal regex patterns that "match all languages".
-- Keep a lookout for possible bugs in regex implementations.
+- [Usage](#usage)
+- [Understanding the results](#understanding-the-results)
+- [Notes and Issues](#notes-and-issues)
+- [Tables of Contents](#tables-of-contents)
+
+Each language has a folder with an application that accepts two input arguments: a regex pattern and the file path to write the results.
+The application iterates over all UTF-8 characters (`U+000000` to `U+10FFFF`) and writes the characters that match the file as hexadecimal codepoints.
+The results are then compared to the results of other languages.
 
 Supported Languages:
 
@@ -29,7 +31,17 @@ Supported Languages:
 - [ ] Swift
 - [ ] **Your PR here**
 
-**Disclaimer**: This is not a comprehensive test suite. It is meant to be a starting point for further exploration.
+The goal of this project is to:
+
+- Learn more about regex implementations in multiple languages.
+- Explore similarities/differences between implementations.
+- Consider the viability of creating patterns (in each language) to match other languages.
+- Consider the viability of creating optimal regex patterns for character classes.
+- Consider the viability of creating optimal regex patterns that "match all languages".
+- Keep a lookout for possible bugs in regex implementations.
+
+**Disclaimer**: This project is a work in progress.
+There are still many improvements to be made.
 
 **Want to contribute? Create a PR with your changes.**
 Please include a link to the language's regex implementation documentation and any other relevant information.
